@@ -48,7 +48,6 @@ group :test, :development do
   gem "database_cleaner"
   gem "selenium-webdriver"
   gem "rspec"
-  gem "rspec-rails", "~> 2.0"
   gem "pry-rails"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
