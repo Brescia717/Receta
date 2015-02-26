@@ -25,6 +25,7 @@
 # the configuration and use this file as a manifest.
 #
 # For more information: http://github.com/modeset/teaspoon
+#= require angular-mocks/angular-mocks
 #
 # You can require your own javascript files here. By default this will include everything in application, however you
 # may get better load performance if you require the specific files that are being used in the spec that tests them.
