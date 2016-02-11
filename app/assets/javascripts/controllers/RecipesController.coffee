@@ -7,7 +7,10 @@ controllers.controller("RecipesController", [ '$scope', '$routeParams', '$locati
     if $routeParams.keywords
       Recipe.query(keywords: $routeParams.keywords, (results)-> $scope.recipes = results)
     else
-      $scope.recipes = []
+      # Added this line and removed the one below it to get all recipes by
+      # default.
+      Recipe.query((results)-> $scope.recipes = results)
+      # $scope.recipes = []
 
     $scope.view = (recipeId)-> $location.path("/recipes/#{recipeId}")
     $scope.newRecipe = -> $location.path("/recipes/new")
